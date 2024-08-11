@@ -1,3 +1,4 @@
+"""nombres no eran mayusculas"""
 class Persona():
     def __init__(self,nombre,edad,altura,sexo):
         self._nombre=nombre
