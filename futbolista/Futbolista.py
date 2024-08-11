@@ -23,7 +23,7 @@ class Futbolista(Deportista,Persona):
         self._tarjetasRojas=tarjetasRojas
     
     def getPiernaHabil(self):
-        return self.piernaHabil
+        return self._piernaHabil
     
     def setPiernaHabil(self,piernaHabil):
         self._piernaHabil=piernaHabil
@@ -37,4 +37,4 @@ class Futbolista(Deportista,Persona):
         cls.listaFutbolistas=listaFutbolistas
         
     def __str__(self):
-        return "Mi nombre es "+ self.getNombre() +" soy profesional en el deporte "+ self.getDeporte()+" Tengo "+self.getEdad()+" años de edad y llevo "+ self.getAñosParticipando()+" años en el deporte”"
+        return "Mi nombre es "+ self.getNombre() +" soy profesional en el deporte "+ self.getDeporte()+" Tengo "+str(self.getEdad())+" años de edad y llevo "+ str(self.getAñosPracticando())+" años en el deporte"
